@@ -158,56 +158,15 @@ bool isLegal(pair<int,int> cor,int num){
 
 void StartSudoku()
 {
-    
-    grid[{0, 0}].num = 5;
-    grid[{0, 1}].num = 3;
-    grid[{0, 4}].num = 7;
-
-    grid[{1, 0}].num = 6;
-    grid[{1, 3}].num = 1;
-    grid[{1, 4}].num = 9;
-    grid[{1, 5}].num = 5;
-
-    grid[{2, 1}].num = 9;
-    grid[{2, 2}].num = 8;
-    grid[{2, 7}].num = 6;
-
-    grid[{3, 0}].num = 8;
-    grid[{3, 4}].num = 6;
-    grid[{3, 8}].num = 3;
-
-    grid[{4, 0}].num = 4;
-    grid[{4, 3}].num = 8;
-    grid[{4, 5}].num = 3;
-    grid[{4, 8}].num = 1;
-
-    grid[{5, 0}].num = 7;
-    grid[{5, 4}].num = 2;
-    grid[{5, 8}].num = 6;
-
-    grid[{6, 1}].num = 6;
-    grid[{6, 6}].num = 2;
-    grid[{6, 7}].num = 8;
-
-    grid[{7, 3}].num = 4;
-    grid[{7, 4}].num = 1;
-    grid[{7, 5}].num = 9;
-    grid[{7, 8}].num = 5;
-
-    grid[{8, 4}].num = 8;
-    grid[{8, 7}].num = 7;
-    grid[{8, 8}].num = 9;
-
-
-    // cout<<"Enter values from left to right \n Enter 0 for emoty cell : "<<endl;
-    // for (int i = 0; i < 9; i++)
-    // {
-    //     for (int j = 0; j < 9; j++)
-    //     {
-    //         cout << "[" <<i<<"]["<<j<<"] : "<< endl;
-    //         cin>>grid[{i, j}].num;
-    //     }
-    // }
+    cout<<"Enter values from left to right \n Enter 0 for emoty cell : "<<endl;
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 9; j++)
+        {
+            cout << "[" <<i<<"]["<<j<<"] : "<< endl;
+            cin>>grid[{i, j}].num;
+        }
+    }
 }
 
 
